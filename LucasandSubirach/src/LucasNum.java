@@ -1,4 +1,4 @@
-public class NikNum {
+public class LucasNum {
     private int startOne = 2;
     private int startTwo = 1;
     private double clockOne;
@@ -12,13 +12,13 @@ public class NikNum {
         startTwo = startT;
     }
 
-    public long calculateNik(int iterationCount) {
+    public long calculateLucas(int iterationCount) {
         if (iterationCount == 1) {
             return startTwo;
-        } else if (iterationCount <= 0) {
+        } else if (iterationCount == 0) {
             return startOne;
         } else {
-            return calculateNik(iterationCount - 1) + calculateNik(iterationCount - 2) + calculateNik(iterationCount - 3);
+            return calculateLucas(iterationCount - 1) + calculateLucas(iterationCount - 2) ;
         }
     }
 
@@ -26,18 +26,18 @@ public class NikNum {
         //Save computation time by storing the clock timing as well during growth calculations
         prevIteration = iterationCount;
         double preTime = System.currentTimeMillis();
-        double nikOne = calculateNik(iterationCount);
+        double lucasOne = calculateLucas(iterationCount);
         clockOne = System.currentTimeMillis() - preTime;
         System.out.println("Time to complete calculating " + iterationCount +
-                " iterations is: " + clockOne + " milliseconds");
+                " iterations is: " + clockOne +" milliseconds");
 
         preTime = System.currentTimeMillis();
-        double nikTwo = calculateNik(iterationCount + 1);
+        double lucasTwo = calculateLucas(iterationCount + 1);
         clockTwo = System.currentTimeMillis() - preTime;
-        System.out.println("Time to complete calculating " + (iterationCount + 1) +
-                " iterations is: " + clockTwo + " milliseconds");
+        System.out.println("Time to complete calculating " + (iterationCount+1) +
+                " iterations is: " + clockTwo +" milliseconds");
         updatedTime = true;
-        return (double) nikTwo/nikOne;
+        return lucasTwo /lucasOne;
     }
 
     public double compareGrowthTimes(int iterationCount) {
@@ -45,7 +45,7 @@ public class NikNum {
             updatedTime = false;
             return clockTwo / clockOne;
         }
-        calculateNik(iterationCount);
+        calculateLucas(iterationCount);
         compareGrowthTimes(iterationCount);
         return clockTwo / clockOne;
     }
