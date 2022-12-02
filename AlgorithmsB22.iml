@@ -5,11 +5,11 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/DoubleTrouble/src" isTestSource="false" />
     </content>
-    <content url="file://$MODULE_DIR$/GaussianAndDyanmicProgramming">
-      <sourceFolder url="file://$MODULE_DIR$/GaussianAndDyanmicProgramming/src" isTestSource="false" />
-    </content>
     <content url="file://$MODULE_DIR$/../Combinations">
       <sourceFolder url="file://$MODULE_DIR$/../Combinations/src" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../GaussianAndDyanmicProgramming">
+      <sourceFolder url="file://$MODULE_DIR$/../GaussianAndDyanmicProgramming/src" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../LucasAndSubirach" />
     <orderEntry type="inheritedJdk" />
