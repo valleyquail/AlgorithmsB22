@@ -11,6 +11,9 @@
     <content url="file://$MODULE_DIR$/../GaussianAndDyanmicProgramming">
       <sourceFolder url="file://$MODULE_DIR$/../GaussianAndDyanmicProgramming/src" isTestSource="false" />
     </content>
+    <content url="file://$MODULE_DIR$/../HashingAndDijkstra">
+      <sourceFolder url="file://$MODULE_DIR$/../HashingAndDijkstra/src" isTestSource="false" />
+    </content>
     <content url="file://$MODULE_DIR$/../LucasAndSubirach" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
