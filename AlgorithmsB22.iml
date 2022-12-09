@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/DoubleTrouble/src" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../Combinations">
+      <sourceFolder url="file://$MODULE_DIR$/../Combinations" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../Combinations/src" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../GaussianAndDyanmicProgramming">
