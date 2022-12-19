@@ -16,6 +16,9 @@
       <sourceFolder url="file://$MODULE_DIR$/../HashingAndDijkstra/src" isTestSource="false" />
     </content>
     <content url="file://$MODULE_DIR$/../LucasAndSubirach" />
+    <content url="file://$MODULE_DIR$/../NQueens">
+      <sourceFolder url="file://$MODULE_DIR$/../NQueens/src" isTestSource="false" />
+    </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
