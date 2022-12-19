@@ -12,7 +12,7 @@ public class StartingQueenSolver extends PrelimQueen {
         clock = System.currentTimeMillis() - preTime;
         System.out.println("Board of size " + board.length + ":" + Arrays.toString(board));
 //        printBoard(board);
-        System.out.println("The time it took to calculate this size is: " + clock + " milliseconds");
+        System.out.println("The time it took to calculate this size is: " + clock + " milliseconds\n");
 //        System.out.println(isLegalPosition(board, boardSize));
     }
 

@@ -15,7 +15,6 @@ public class AllQueens extends PrelimQueen {
 //        printBoard(board);
         System.out.println("For a board of n = " + board.length +", the number of legal queen placements is: " + numSolutions);
         System.out.println("The time it took to calculate this size is: " + clock + " milliseconds\n");
-//        System.out.println(isLegalPosition(board, boardSize));
     }
 
     public int[] findAll(int[] board) {
@@ -42,14 +41,12 @@ public class AllQueens extends PrelimQueen {
                 return nextLegalHelper(board, index);
             } else {
                 //Deals with a partially full board but there are no valid queens in a row
-
                 board[index] = 0;
+                //Breaks out of the loop if the program has exhausted all solutions
                 if(index == 0 && board[index] == 0){
                     board[0]--;
                     return board;
                 }
-                //Breaks out of the loop if the program has exhausted all solutions
-
                 board[index - 1]++;
                 return nextLegalPosition(board);
             }

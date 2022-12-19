@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74ffab09-2eee-4b8e-a5d5-b392c2c4aa69" name="Changes" comment="Working homework">
+    <list default="true" id="74ffab09-2eee-4b8e-a5d5-b392c2c4aa69" name="Changes" comment="Adding all the cleaned up statements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AllQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AllQueens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Answers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Answers.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrelimQueen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PrelimQueen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StartingQueenSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StartingQueenSolver.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="52a06de7eb5210a932f336256028866513ff8bfd" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -101,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671473313835</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Finished the homework">
+      <created>1671480077728</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671480077728</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding all the cleaned up statements">
+      <created>1671480344563</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671480344563</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,7 +130,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -119,29 +152,26 @@
     <MESSAGE value="working algorithm for nextlegalposition" />
     <MESSAGE value="fixing recursive dying" />
     <MESSAGE value="Working homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working homework" />
+    <MESSAGE value="Finished the homework" />
+    <MESSAGE value="Adding all the cleaned up statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding all the cleaned up statements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>12</line>
+          <line>16</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>18</line>
+          <line>24</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>23</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>17</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
@@ -151,19 +181,24 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/PrelimQueen.java</url>
-          <line>102</line>
+          <line>100</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <condition expression="board[0] == board.length &amp;&amp; numSolutions == 10" language="JAVA" />
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="board[0] == 5 &amp;&amp; numSolutions == 10 " language="JAVA" />
           <url>file://$PROJECT_DIR$/src/AllQueens.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="18" />
+          <line>21</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/PrelimQueen.java</url>
           <line>78</line>
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />

@@ -1,0 +1,23 @@
+Index: src/AllQueens.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class AllQueens extends PrelimQueen {\r\n\r\n    private int numSolutions = 0;\r\n\r\n    public void allSolutions(int boardSize) {\r\n\r\n        numSolutions =0;\r\n        if (boardSize == 3 || boardSize == 2)\r\n            System.out.println(\"There are no possible solutions for a board this size\");\r\n        int[] board = new int[boardSize];\r\n        board[0] = 1;\r\n        double preTime = System.currentTimeMillis();\r\n        board = findAll(board);\r\n        clock = System.currentTimeMillis() - preTime;\r\n//        printBoard(board);\r\n        System.out.println(\"For a board of n = \" + board.length +\", the number of legal queen placements is: \" + numSolutions);\r\n        System.out.println(\"The time it took to calculate this size is: \" + clock + \" milliseconds\\n\");\r\n//        System.out.println(isLegalPosition(board, boardSize));\r\n    }\r\n\r\n    public int[] findAll(int[] board) {\r\n        do {\r\n            board = nextLegalPosition(board);\r\n        } while (board[0] != -1);\r\n        return board;\r\n    }\r\n\r\n    @Override\r\n    public int[] nextLegalHelper(int[] board, int index) {\r\n        //Manages a fully filled board to start backtrack\r\n        if (index < board.length) {\r\n            board[index]++;\r\n            if (isLegalInsert(board, index + 1)) {\r\n                //Checks if the position is legal before trying to find the next legal position\r\n//                System.out.println(\"This is a legal board\");\r\n//                System.out.println(Arrays.toString(board));\r\n                return board;\r\n            } else if (board[index] < board.length) {\r\n                //Deal with if the current spot is not valid and move the queen to the right if it is available\r\n//                System.out.println(\"incrementing the column\");\r\n//                System.out.println(Arrays.toString(board));\r\n                return nextLegalHelper(board, index);\r\n            } else {\r\n                //Deals with a partially full board but there are no valid queens in a row\r\n\r\n                board[index] = 0;\r\n                if(index == 0 && board[index] == 0){\r\n                    board[0]--;\r\n                    return board;\r\n                }\r\n                //Breaks out of the loop if the program has exhausted all solutions\r\n\r\n                board[index - 1]++;\r\n                return nextLegalPosition(board);\r\n            }\r\n        } else {\r\n            //Deals with an entirely full board\r\n            numSolutions++;\r\n            board[index - 1] = 0;\r\n            board[index - 2]++;\r\n            return board;\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/AllQueens.java b/src/AllQueens.java
+--- a/src/AllQueens.java	(revision d7ad2f7b7f2f7c0b7e25119fb4540af4bb88e1ee)
++++ b/src/AllQueens.java	(date 1671478162587)
+@@ -11,10 +11,10 @@
+         board[0] = 1;
+         double preTime = System.currentTimeMillis();
+         board = findAll(board);
+-        clock = System.currentTimeMillis() - preTime;
++//        clock = System.currentTimeMillis() - preTime;
+ //        printBoard(board);
+         System.out.println("For a board of n = " + board.length +", the number of legal queen placements is: " + numSolutions);
+-        System.out.println("The time it took to calculate this size is: " + clock + " milliseconds\n");
++//        System.out.println("The time it took to calculate this size is: " + clock + " milliseconds\n");
+ //        System.out.println(isLegalPosition(board, boardSize));
+     }
+ 

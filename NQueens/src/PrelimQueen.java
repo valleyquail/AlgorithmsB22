@@ -14,11 +14,8 @@ public class PrelimQueen {
     }
 
     protected boolean notValid(int[] board) {
-        for (int i = 0; i < board.length - 1; i++) {
-            if (board[i] == 0 && board[i + 1] != 0) {
-                return true;
-            }
-        }
+        for (int i = 0; i < board.length - 1; i++)
+            if (board[i] == 0 && board[i + 1] != 0) return true;
 //        System.out.println("passes valid");
         return false;
     }
@@ -37,7 +34,7 @@ public class PrelimQueen {
         // current queen's column
         int queen = board[n - 1];
         // if this is the starting queen, the board is legal or if no queen in this row, go to the next row
-        if (n == 1 || queen == 0) return true;
+        if (n == 0 || queen == 0) return true;
         if (queen > board.length) return false;
         //check if the current queen is in a valid location
         // check the column above for queens
@@ -76,10 +73,10 @@ public class PrelimQueen {
         int index;
         for (index = 0; index < board.length; index++)
             if (board[index] == 0) break;
+        if (index == 0 && board[index] == 0) return board;
         if (isLegalPosition(board, index)) {
             return nextLegalHelper(board, index);
-        } else
-            return nextLegalHelper(board, index - 1);
+        } else return nextLegalHelper(board, index - 1);
     }
 
     public int[] nextLegalHelper(int[] board, int index) {
@@ -117,11 +114,8 @@ public class PrelimQueen {
         for (int k : board) {
             System.out.print("|");
             for (int j = 0; j < board.length; j++) {
-                if (j == k - 1) {
-                    System.out.printf(" %c ", 'Q');
-                } else {
-                    System.out.printf(" %c ", '~');
-                }
+                if (j == k - 1) System.out.printf(" %c ", 'Q');
+                else System.out.printf(" %c ", '~');
             }
             System.out.println("|");
         }

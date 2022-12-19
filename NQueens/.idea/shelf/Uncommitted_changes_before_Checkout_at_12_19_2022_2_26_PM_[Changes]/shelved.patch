@@ -1,0 +1,13 @@
+Index: src/PrelimQueen.java
+===================================================================
+diff --git a/src/PrelimQueen.java b/src/PrelimQueen.java
+--- a/src/PrelimQueen.java	
++++ b/src/PrelimQueen.java	
+@@ -76,6 +76,7 @@
+         int index;
+         for (index = 0; index < board.length; index++)
+             if (board[index] == 0) break;
++        if (index == 0 && board[index] == 0) return board;
+         if (isLegalPosition(board, index)) {
+             return nextLegalHelper(board, index);
+         } else
